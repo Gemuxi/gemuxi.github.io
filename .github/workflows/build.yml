@@ -23,13 +23,13 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v6
 
-      # - name: Checkout posts repository
-      #   uses: actions/checkout@v6
-      #   with:
-      #     repository: Gemuxi/posts
-      #     path: src/content/posts
-      #     token: ${{ secrets.POSTS_REPO_TOKEN }}
-      #     fetch-depth: 1
+      - name: Checkout posts repository
+        uses: actions/checkout@v6
+        with:
+          repository: Gemuxi/posts
+          path: src/content/posts
+          token: ${{ secrets.POSTS_REPO_TOKEN }}
+          fetch-depth: 1
 
       - name: Install, build, and upload your site output
         uses: withastro/action@v5
