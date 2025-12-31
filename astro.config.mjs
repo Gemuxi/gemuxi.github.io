@@ -26,7 +26,7 @@ import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-cop
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://gemuxi.github.io/",
+	site: "https://gemuxi.github.io/fantastic-meme/",
 	base: "/fantastic-meme",
 	trailingSlash: "always",
 	integrations: [
