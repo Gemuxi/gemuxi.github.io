@@ -26,7 +26,7 @@ jobs:
       - name: Checkout posts repository
         uses: actions/checkout@v6
         with:
-          repository: Gemuxi/posts
+          repository: ${{ secrets.POSTS_REPO }}
           path: src/content/posts
           token: ${{ secrets.POSTS_REPO_TOKEN }}
           fetch-depth: 1
